@@ -105,7 +105,7 @@
                     txtInput.value=txtInput.value.slice(0,-1);
                 break;
                 case "sign":
-                    txtInput.value=parseInt(-txtInput.value);
+                    txtInput.value=parseFloat(-txtInput.value);
                     break;
                 default:
                    if(!isClear || txtInput.value == 0){
@@ -121,11 +121,11 @@
     }
 
 function calculate(numbers,operators){
-    let result=parseInt(numbers[0].replace(',',''));
+    let result=parseFloat(numbers[0].replace(',',''));
     try{
         for(let index=0; index<operators.length; index++){
             let operator = operators[index];
-            let operand = parseInt(numbers[index + 1].replace(',',''));
+            let operand = parseFloat(numbers[index + 1].replace(',',''));
             switch(operator){
                 case "+":
                     result += operand;
