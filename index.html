@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/0c170eb2fd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+
+    <div id="text-box">
+    <input type="text"  name="input" id="calculator-text-box" readonly>
+    </div>
+        
+    <div id="number-buttons">
+      <button id="1" class="number-button">1</button>
+      <button id="2" class="number-button">2</button>
+      <button id="3" class="number-button">3</button>
+      <button id="4" class="number-button">4</button>
+      <button id="5" class="number-button">5</button>
+      <button id="6" class="number-button">6</button>
+      <button id="7" class="number-button">7</button>
+      <button id="8" class="number-button">8</button>
+      <button id="9" class="number-button">9</button>
+      <button id="sign" class="number-button">+/-</button>
+      <button id="0" class="number-button">0</button>
+      <button id="." class="number-button">.</button>
+    </div>
+    <div id="operation-buttons">
+   
+    <button id="delete" class="operation-button"><i class="fa-solid fa-delete-left"></i></button>
+    <button id="clear" class="operation-button"><i class="fa-solid fa-c"></i></button>
+    <button id="/" class="operation-button">/</button>
+    <button id="-" class="operation-button">-</button>
+    <button id="*" class="operation-button">*</button>
+    <button id="+" class="operation-button">+</button>
+    <button id="=" class="operation-button">=</button>
+    </div>
+    
+    </div>
+    <footer class="calculator-footer">
+    <p>Simple Browser Calculator</p>
+    </footer>
+    <script src="index.js"></script>
+   
+</body>
+</html>
